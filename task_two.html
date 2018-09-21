@@ -1,0 +1,30 @@
+<!DOCUMENT html>
+<html>
+  <head>
+    <title>Task 2</title>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+  </body>
+
+
+  <script type="text/javascript">
+
+    var canvas = document.getElementById("canvas");
+    if (canvas.getContext) {
+      var ctx = canvas.getContext('2d');
+
+      var i = 0; // Iterating value for interval in while loop
+      while (i < 100) {
+        ctx.beginPath();
+        ctx.moveTo(0, i * 10);
+        ctx.lineTo(i * 5, 0);
+        ctx.stroke();
+
+        i++
+      }
+    }
+  </script>
+  <script src="task_three.js"></script>
+  <script src="task_four.js"></script>
+</html>
